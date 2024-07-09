@@ -1,0 +1,20 @@
+services:
+  chronocat-docker:
+    image: cpudding/chronocat-docker
+    tty: true
+    container_name: chronocat-docker
+    restart: always
+    ports:
+      - "5500:5500"       #satori默认端口
+      - "5900:5900"       #vnc默认端口
+      - "6081:6081"       #noVNC默认端口
+    environment:
+      - TZ=Asia/Shanghai
+      - VNC_PASSWD=vncpasswd # noVNC 密码
+      - CC_TAG=v0.2.11 # Chronocat 版本TAG
+      - QQ_TAG=QQ_3.2.9_240617_amd64_01.deb QQNT版本TAG
+    volumes:
+      - ./config:/root/.chronocat/config # Chronocat 数据
+      - ./data/QQ:/root/.config/QQ # QQ 数据
+      - ./plugins:/opt/QQ/resources/app/LiteLoaderQQNT/plugins # LiteLoaderQQNT 插件目录
+
