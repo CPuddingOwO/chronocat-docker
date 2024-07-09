@@ -1,4 +1,5 @@
 # chronocat-docker
+[![Docker Publish](https://github.com/CPuddingOwO/chronocat-docker/actions/workflows/docker-publish.yml/badge.svg?branch=master)](https://github.com/CPuddingOwO/chronocat-docker/actions/workflows/docker-publish.yml)
 
 本仓库是学习docker的打包与自动化构建，请下载后24小时内删除
 
