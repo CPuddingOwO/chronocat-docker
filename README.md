@@ -73,7 +73,7 @@ docker exec chronocat-docker sh -c "x11vnc -storepasswd newpasswd /root/.vnc/pas
    ```
 
 3. 重新pull最近镜像
-
+4. 
    ```bash
    docker pull cpudding/chronocat-docker
    ```
